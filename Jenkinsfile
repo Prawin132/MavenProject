@@ -6,17 +6,7 @@ pipeline {
     }
 
     stages{
-        stage('Code Checkout'){
-            steps{
-                checkout([
-                    $class: 'GitSCM',
-                    branches: [[name: '*/master']],
-                    userremoteConfigs: [[
-                        credentialsId: 'praveen_git_repo'
-                        url:'https://github.com/Prawin132/MavenProject.git']]
-                ])
-            }
-        }
+       
         
         stage('build'){
             steps{
