@@ -11,7 +11,9 @@ pipeline {
                 checkout([
                     $class: 'GitSCM',
                     branches: [[name: '*/master']],
-                    userremoteConfigs: [[url:'https://github.com/Prawin132/MavenProject.git']]
+                    userremoteConfigs: [[
+                        credentialsId: 'praveen_git_repo'
+                        url:'https://github.com/Prawin132/MavenProject.git']]
                 ])
             }
         }
