@@ -1,5 +1,5 @@
 @Library('Shared-library@master')_
-pipeline{
+Pipeline{
         reponame =  "MavenProject"
 }
 
