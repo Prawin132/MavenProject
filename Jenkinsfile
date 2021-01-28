@@ -1,5 +1,5 @@
 
-@library('Shared-library@master')
+@Library('Shared-library@master') _
 pipeline {
     reponame = "MavenProject"
 }
