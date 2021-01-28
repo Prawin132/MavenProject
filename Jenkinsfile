@@ -1,6 +1,4 @@
 
-@Library('Shared-library@master') _
-
 pipeline {
     agent any
     
@@ -26,6 +24,6 @@ pipeline {
         }
     }
 }
-}
+
        
 
